@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить отзыв</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Добавить отзыв</h1>
+
+    <label for="productName">Название продукта:</label>
+    
+    <input type="text" id="productName" placeholder="Введите название продукта">
+    <label for="reviewText">Отзыв:</label>
+    <textarea id="reviewText" rows="6" placeholder="Введите отзыв о продукте"></textarea>
+    <button onclick="addReview()">Добавить отзыв</button>
+    <button type="button"><a href="view_reviews.html">Посмотреть отзовы</a></button>
+    <script src="add_review.js"></script>
+</body>
+</html>

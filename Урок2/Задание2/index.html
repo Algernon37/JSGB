@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система отзывов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .review-container {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .review {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .review:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Оставьте ваш отзыв</h1>
+    <label for="productSelect">Выберите продукт:</label>
+    <select id="productSelect">
+        <option value="Apple iPhone 13">Apple iPhone 13</option>
+        <option value="Samsung Galaxy Z Fold 3">Samsung Galaxy Z Fold 3</option>
+        <option value="Sony PlayStation 5">Sony PlayStation 5</option>
+    </select>
+
+    <br><br>
+
+    <textarea id="reviewInput" placeholder="Напишите ваш отзыв" rows="4" cols="50"></textarea>
+    
+    <br><br>
+
+    <button onclick="addReview()">Отправить отзыв</button>
+    <p id="errorMessage" style="color: red;"></p>
+    <div id="reviewContainer" class="review-container"></div>
+    <script src="app.js"></script>
+</body>
+</html>
